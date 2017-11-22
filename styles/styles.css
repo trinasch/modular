@@ -3,6 +3,7 @@ body {
   width: 100%;
   margin: auto;
   background-color:lightgray;
+  text-rendering: optimizeLegibility; /*Safari*/
 }
 
 header, footer {
@@ -10,7 +11,7 @@ header, footer {
   background-color:lightgray;
   color: black;
   text-align: center;
-  padding:20px
+  padding:20px;
 }
 
 h1 {
@@ -40,10 +41,12 @@ section {
 
 a {
   text-decoration-line: none;
+  -webkit-text-decoration-line: none; /*Safari*/
 }
 
 a:hover {
   text-decoration-line: underline;
+  -webkit-text-decoration-line: none; /*Safari*/
 }
 
 a:visited {
@@ -51,7 +54,6 @@ a:visited {
 }
 
 .fa-5x {
-  clear:float;
   margin: .5em;
   color: blue;
 }
@@ -93,6 +95,7 @@ section>p:last-of-type {
 
 .price {
   text-decoration-line: line-through;
+  -webkit-text-decoration-line: none; /*Safari*/
 }
 
 i:not(.fa-circle):not(.fa-5x) {
